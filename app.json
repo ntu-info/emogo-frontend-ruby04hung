@@ -2,25 +2,30 @@
   "expo": {
     "scheme": "acme",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-sqlite"
     ],
     "name": "expo-router-mwe",
     "slug": "expo-router-mwe",
     "android": {
-      "package": "com.spiketren.exporoutermwe"
+      "package": "com.spiketren.exporoutermwe",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK"
+      ]
     },
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "7918e76f-59e9-45c4-aae4-c99cec64cfac"
+        "projectId": "6171e484-b815-421b-a87f-9d87f625034f"
       }
     },
-    "owner": "spiketren",
     "ios": {
       "bundleIdentifier": "com.spiketren.exporoutermwe",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
-      }
+      },
+      "supportsTablet": true
     }
   }
 }
