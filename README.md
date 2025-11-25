@@ -10,12 +10,12 @@ This is a very small Expo project using **expo-router** with:
 - `Link` components and `useRouter` for navigation
 
 
-## How to run (開發環境) 2025.11.26 更
+# How to run (開發環境) 2025.11.26 更
 
 Install dependencies:
 
 npm install
-# 確保安裝作業所需的套件: npx expo install expo-notifications expo-sqlite expo-camera expo-location expo-file-system expo-sharing
+## 確保安裝作業所需的套件: npx expo install expo-notifications expo-sqlite expo-camera expo-location expo-file-system expo-sharing
 
 
 Start the dev server:
@@ -33,9 +33,9 @@ Open the app on a device or emulator using the Expo dev tools.
 
 https://expo.dev/accounts/ruby04hung/projects/expo-router-mwe/builds/3aaa56bd-dd9f-4e4e-b4bb-e405596d4c07
 
-# 目前狀況： 我最後一次建構（第四次建構）的連結如上，建構仍在排隊中，預計需要 80 分鐘
+## 目前狀況： 我最後一次建構（第四次建構）的連結如上，建構仍在排隊中，預計需要 80 分鐘
 
-# 註：雲端建構可能因 Gradle 錯誤而失敗，但本連結證明已進行多次嘗試。
+## 註：雲端建構可能因 Gradle 錯誤而失敗，但本連結證明已進行多次嘗試。
 
 2. 繳交檔案清單 (已上傳到 GitHub Repo)
 
