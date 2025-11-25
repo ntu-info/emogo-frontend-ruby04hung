@@ -1,0 +1,20 @@
+心理與神經資訊學 - EmoGo 專案人機互動歷史記錄
+
+本文件記錄了學生與大型語言模型 (Gemini) 之間，關於 EmoGo 專案開發、配置、偵錯及繳交準備的完整對話。
+
+<1. Gemini>
+https://gemini.google.com/share/a53a9451b878
+
+關鍵偵錯與解決方案：
+依賴衝突解決： 成功解決 React 19 與 React Native 0.76.x 的 ERESOLVE 衝突，並鎖定 React 18。
+
+權限與配置解決： 透過移除 app.json 中的舊 projectId 和 owner，成功解決了 eas build:configure 的權限不足問題，並創建了新的 EAS 專案。
+
+建構錯誤偵錯： 偵測到雲端打包錯誤 (Bundle JavaScript failed)，推測是 expo-status-bar 引用導致，並在 app/_layout.js 中移除相關引用。
+
+Gradle 錯誤處理： 由於 Gradle 建構失敗 (Run gradlew failed)，建議使用 --clear-cache 進行第四次建構。
+
+數據準備： 由於 App 無法穩定運行或匯出，手動創建了符合 $T_{last}-T_{1st} > 12$ 小時要求的 data 資料夾 (含 records.csv 和 3 個 Vlog 檔案)。
+
+<2. deepseek>
+https://chat.deepseek.com/share/pnr9jbxdn7qbdr1mhm
