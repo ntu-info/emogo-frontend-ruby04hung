@@ -1,6 +1,5 @@
 import { Stack } from "expo-router";
-// 引入 StatusBar 來控制狀態欄
-import { StatusBar } from "expo-status-bar"; 
+// 移除了 expo-status-bar 的引用，以解決雲端建構錯誤
 import { useEffect } from 'react';
 import { initDatabase } from './database'; // <-- 引入資料庫初始化函數
 
@@ -14,10 +13,9 @@ export default function RootLayout() {
 
   return (
     <>
-      {/* 確保狀態欄設置為自動模式 */}
-      <StatusBar style="auto" />
+      {/* 移除了 <StatusBar style="auto" /> 標籤 */}
       <Stack>
-        {/* The (tabs) group: Tab Navigator 的容器 */}
+        {/* The (tabs) group is one Stack screen with its own tab navigator */}
         <Stack.Screen
           name="(tabs)"
           options={{ headerShown: false }}
@@ -27,7 +25,7 @@ export default function RootLayout() {
           name="details"
           options={{ title: "Details" }}
         />
-        {/* 新增 collect 畫面：用戶將在此畫面採集數據 (相對路徑: /collect) */}
+        {/* 新增 collect 畫面：用於採集數據 (在 app/collect.js) */}
         <Stack.Screen
           name="collect"
           options={{ title: "採集情緒數據" }}
